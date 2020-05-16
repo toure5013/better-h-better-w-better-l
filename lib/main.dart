@@ -58,6 +58,28 @@ class _MyHomePageState extends State<MyHomePage> {
 
     super.initState();
     //calendarAdd();
+
+    slides.add(
+      new Slide(
+        colorBegin: Color(0xffFFDAB9),
+        colorEnd: Color(0xff40E0D0),
+        title: "ENGAGED",
+        styleTitle: TextStyle(
+            color: Color(0xff3da4ab),
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'RobotoMono'),
+        description:
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        styleDescription: TextStyle(
+            color: Colors.white,
+            fontSize: 20.0,
+            fontStyle: FontStyle.italic,
+            fontFamily: 'Raleway'),
+        pathImage: "assets/images/bin-eco.png",
+      ),
+    );
+
     slides.add(
       new Slide(
         colorBegin: Color(0xff7FFFD4),
@@ -75,7 +97,27 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "assets/images/bincar.png",
+        pathImage: "assets/images/car-gps.png",
+      ),
+    );
+    slides.add(
+      new Slide(
+        colorBegin: Color(0xffFFDAB9),
+        colorEnd: Color(0xff40E0D0),
+        title: "ENGAGED",
+        styleTitle: TextStyle(
+            color: Color(0xff3da4ab),
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'RobotoMono'),
+        description:
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        styleDescription: TextStyle(
+            color: Colors.white,
+            fontSize: 20.0,
+            fontStyle: FontStyle.italic,
+            fontFamily: 'Raleway'),
+        pathImage: "assets/images/save.png",
       ),
     );
 
@@ -99,41 +141,22 @@ class _MyHomePageState extends State<MyHomePage> {
         pathImage: "assets/images/bin.png",
       ),
     );
-    slides.add(
-      new Slide(
-        colorBegin: Color(0xffFFDAB9),
-        colorEnd: Color(0xff40E0D0),
-        title: "ENGAGED",
-        styleTitle: TextStyle(
-            color: Color(0xff3da4ab),
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold,
-            fontFamily: 'RobotoMono'),
-        description:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-        styleDescription: TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
-            fontStyle: FontStyle.italic,
-            fontFamily: 'Raleway'),
-        pathImage: "assets/images/map.png",
-      ),
-    );
 
   }
 
   void onDonePress() {
     // TODO: go to next screen
     // TODO: go to next screen
-    Navigator.push(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => MapUdate()),
     );
+
   }
 
   void onSkipPress() {
     // TODO: go to next screen
-    Navigator.push(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => MapUdate()),
     );
