@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "assets/images/world.png",
+        pathImage: "assets/images/bin.png",
       ),
     );
     slides.add(
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "assets/images/env.png",
+        pathImage: "assets/images/map.png",
       ),
     );
 
