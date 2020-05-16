@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:infowindow/models/pin_pill_info.dart';
+import 'package:threeb/models/pin_pill_info.dart';
 
 class MapPinPillComponent extends StatefulWidget {
 

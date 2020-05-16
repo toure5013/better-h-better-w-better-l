@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>infowindow</string>
+	<string>threeb</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -41,11 +41,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>io.flutter.embedded_views_preview</key>
-	<true/>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Needed to access location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Needed to access location</string>
 </dict>
 </plist>
