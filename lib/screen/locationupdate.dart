@@ -4,7 +4,10 @@ import 'package:threeb/components/map_pin_pill.dart';
 import 'package:threeb/models/pin_pill_info.dart';
 import 'package:location/location.dart';
 import 'package:flutter/material.dart';
+import 'package:threeb/screen/scan/generate.dart';
 import 'dart:async';
+
+import 'package:threeb/screen/scan/scan.dart';
 
 
 
@@ -20,6 +23,13 @@ class MapUdate extends StatefulWidget {
 }
 
 class _MapUdateState extends State<MapUdate> {
+
+  BottomNavigationBarItem _bottomIcons(IconData icon) {
+    return BottomNavigationBarItem(
+      //  backgroundColor: Colors.blue,
+        icon: Icon(icon),
+        title: Text(""));
+  }
 
 
 
@@ -114,6 +124,39 @@ class _MapUdateState extends State<MapUdate> {
           bearing: CAMERA_BEARING);
     }
     return Scaffold(
+
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey.shade300,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        items: [
+          _bottomIcons(Icons.person),
+          _bottomIcons(Icons.camera),
+          _bottomIcons(Icons.build),
+        ],
+        onTap: (index) {
+          print(index);
+          switch(index){
+            case 0 :
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => MapUdate()));
+              break;
+            case 1 :
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => ScanPage()));
+              break;
+            case 2 :
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => GeneratePage()));
+              break;
+
+          }
+
+        },
+      ),
       body: Stack(
         children: <Widget>[
           GoogleMap(
@@ -152,7 +195,7 @@ class _MapUdateState extends State<MapUdate> {
     LatLng(destinationLocation.latitude, destinationLocation.longitude);
 
     sourcePinInfo = PinInformation(
-        locationName: "Start Location",
+        locationName: "Order this collector",
         location: SOURCE_LOCATION,
         pinPath: "assets/driving_pin.png",
         avatarPath: "assets/images/friend1.png", //changer l'image

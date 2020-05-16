@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:threeb/screen/locationupdate.dart';
+import 'package:threeb/screen/scan/homePage.dart';
 
 void main() => runApp(MyApp());
 
@@ -149,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: go to next screen
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => MapUdate()),
+      MaterialPageRoute(builder: (context) => HomePage()),
     );
 
   }
@@ -158,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // TODO: go to next screen
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => MapUdate()),
+      MaterialPageRoute(builder: (context) => HomePage()),
     );
   }
 
