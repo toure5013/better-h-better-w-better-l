@@ -68,7 +68,7 @@ class GeneratePageState extends State<GeneratePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: 200.0,
+              height: 100.0,
               width: 300,
               child: QrImage(
                 //plce where the QR Image will be shown
@@ -76,11 +76,11 @@ class GeneratePageState extends State<GeneratePage> {
               ),
             ),
             SizedBox(
-              height: 10.0,
+              height: 5.0,
             ),
             Text(
               "New QR Link Generator",
-              style: TextStyle(fontSize: 20.0),
+              style: TextStyle(fontSize: 10.0),
             ),
             TextField(
               controller: qrdataFeed,
@@ -89,7 +89,7 @@ class GeneratePageState extends State<GeneratePage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(40, 20, 40, 0),
+              padding: EdgeInsets.fromLTRB(30, 20, 40, 0),
               child: FlatButton(
                 padding: EdgeInsets.all(15.0),
                 onPressed: () async {

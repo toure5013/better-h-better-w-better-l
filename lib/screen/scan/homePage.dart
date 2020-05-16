@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey.shade300,
         type: BottomNavigationBarType.fixed,
-        currentIndex: 0,
+        currentIndex: 4,
         items: [
           _bottomIcons(Icons.person),
           _bottomIcons(Icons.camera),
@@ -45,6 +45,10 @@ class _HomePageState extends State<HomePage> {
             case 2 :
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => GeneratePage()));
+              break;
+            case 4 :
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => HomePage()));
               break;
 
           }
@@ -67,9 +71,9 @@ class _HomePageState extends State<HomePage> {
             //Image(image: NetworkImage("https://media.istockphoto.com/vectors/qr-code-scan-phone-icon-in-comic-style-scanner-in-smartphone-vector-vector-id1166145556")),
             flatButton("Book collector", MapUdate()),
             SizedBox(height: 20.0,),
-            flatButton("Scan QR CODE", ScanPage()),
+            flatButton("Scan Drug Qr", ScanPage()),
             SizedBox(height: 20.0,),
-            flatButton("Generate QR CODE", GeneratePage()),
+            flatButton("Generate QR for Drug", GeneratePage()),
           ],
         ),
       ),

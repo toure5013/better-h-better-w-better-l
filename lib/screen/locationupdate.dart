@@ -195,7 +195,7 @@ class _MapUdateState extends State<MapUdate> {
     LatLng(destinationLocation.latitude, destinationLocation.longitude);
 
     sourcePinInfo = PinInformation(
-        locationName: "Order this collector",
+        locationName: "Order this Location",
         location: SOURCE_LOCATION,
         pinPath: "assets/driving_pin.png",
         avatarPath: "assets/images/friend1.png", //changer l'image
