@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+      /*bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
         selectedItemColor: Colors.green,
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
           }
 
         },
-      ),
+      ),*/
       appBar: AppBar(
         title: Text("Homepage"),
         centerTitle: true,
