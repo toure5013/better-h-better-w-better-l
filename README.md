@@ -32,9 +32,18 @@ GitHub link: https://github.com/umar681916 <br>
 LinkedIn: http://linkedin.com/in/muhammad-umar-inuwa-889223186 <br>
 Twitter: @umarinuwasharuf
 
+### Name:Muhammad Umar Inuwa
+GitHub link: https://github.com/umar681916<br>
+LinkedIn: http://linkedin.com/in/muhammad-umar-inuwa-889223186<br>
+Twitter: @umarinuwasharuf
+
 ### Name:Muhammad Bolaji Adams
+GitHub link: https://www.linkedin.com/mwlite/in/adams-bolaji-b4121a55<br>
+LinkedIn : https://github.com/bjayzee<br>
+Twitter : Twitter.com/bjairus
 
 ### Name:Francis Masha
+
 
 # Acknowledgements
 All thanks to Almithgy Lord
