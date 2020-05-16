@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
       new Slide(
         colorBegin: Color(0xff7FFFD4),
         colorEnd: Color(0xffFFA500),
-        title: "Destination",
+        title: "INTELLIGENT",
         styleTitle: TextStyle(
             color: Color(0xff3da4ab),
             fontSize: 30.0,
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
       new Slide(
         colorBegin: Color(0xffFFDAB9),
         colorEnd: Color(0xff40E0D0),
-        title: "ENGAGED",
+        title: "SAVE",
         styleTitle: TextStyle(
             color: Color(0xff3da4ab),
             fontSize: 30.0,
@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void onDonePress() {
     // TODO: go to next screen
     // TODO: go to next screen
-    Navigator.pushReplacement(
+    Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => HomePage()),
     );
@@ -157,11 +157,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void onSkipPress() {
     // TODO: go to next screen
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => HomePage()),
+   // Navigator.pushReplacement(
+    //    context,
+    //  MaterialPageRoute(builder: (context) => HomePage()),
+    //  );
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => HomePage()),
     );
   }
+
 
   Widget renderNextBtn() {
     return Icon(
